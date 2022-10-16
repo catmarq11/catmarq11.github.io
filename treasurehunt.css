@@ -1,0 +1,108 @@
+//Connect HTML to Java
+alert("You're connected!")
+
+// function appleChanger
+//  takes an id of an apple on the HTML page from an onclick
+// and changes the HTML element that the ID represents to an emoji
+var missLocation = Math.floor(Math.random()*9)
+var bombLocation = Math.floor(Math.random()*9)
+if(missLocation === bombLocation){
+ bombLocation = Math.floor(Math.random()*9)
+}
+console.log(missLocation, bombLocation)
+const targetChanger = (id) => {
+ if(id === bombLocation){
+   document.getElementById(id).innerHTML = "💣"
+   alert("Destroyed Enemy, You Win!!")
+ } else if(id === missLocation){
+   document.getElementById(id).innerHTML = "😮"
+   alert("Struck Friendly Target, YOU LOSE")
+ } else{
+   return document.getElementById(id).innerHTML = "❌"
+ }
+}
+white_check_mark
+eyes
+raised_hands::skin-tone-3
+
+
+
+
+
+3:41
+button {
+  background-color: grey;
+}
+
+body {
+  background-image: url(https://cdn10.picryl.com/photo/1987/01/27/the-nos-2-and-3-mark-7-16-inch-50-caliber-guns-are-fired-to-starboard-during-748f95-1600.jpg);
+  background-size: cover;
+background-position: center;
+background-attachment: fixed;
+background-color: azure;
+color: white
+}
+
+h1, h3, h5, table {
+  color: white;
+}
+
+h1, h3, button {
+  font-family: 'Sofia', cursive;
+}
+
+.box {
+  /* specify the style, width, and color */
+  border-style: outset;
+  border-width: 20px;
+  border-color: #105410;
+}
+
+* {
+  text-align: center;
+}
+
+button:hover {
+ color: antiquewhite;
+ background-color: gray;
+ font-size: 20px;
+ animation: shake 2s infinite;
+}
+
+hr {
+  border: none;
+}
+
+table {
+  margin-left:auto;
+  margin-right:auto;
+}
+td {
+  font-size: 50px;
+
+}
+#line {
+  list-style-type: none;
+}
+
+img:hover {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 0.5s;
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
